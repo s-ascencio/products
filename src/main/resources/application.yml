@@ -1,0 +1,28 @@
+spring:
+  app:
+    version: 0.0.1
+  profiles:
+    active: default
+  project:
+    name: product
+  application:
+    name: product
+  output:
+    ansi:
+      enabled: always
+  flyway:
+    baseline-on-migrate: true
+    locations:
+      - classpath:db/migration
+      - classpath:db/callback
+
+spring.datasource.driver-class-name: org.postgresql.Driver
+spring.datasource.url: jdbc:postgresql://localhost:5432/db_products
+spring.datasource.username: postgres
+spring.datasource.password: root
+
+
+server:
+  port: 8040
+  servlet:
+    contextPath: /api/falabella

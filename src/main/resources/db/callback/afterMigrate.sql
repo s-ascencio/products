@@ -1,0 +1,1 @@
+select 'Flyway: Ponga aquí el script que desea ejecutar DESPUES a la migración' as Mensaje;

@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "7451ad5e-256c-42fd-9617-5ea47ee0335b",
+		"name": "API-Products-Postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"sku\": \"FAL-88195229\",\r\n        \"name\": \"Bicicleta Baltoro Aro 29\",\r\n        \"brand\": \"JEEP\",\r\n        \"size\": \"ST\",\r\n        \"price\": 100.000,\r\n        \"principalImageUrl\": \"https://falabella.scene7.com/is/image/Falabella/881952283_77\",\r\n        \"otherImagesUrl\": [\r\n            \"https://falabella.scene7.com/is/image/Falabella/881952283_4\",\r\n            \"https://falabella.scene7.com/is/image/Falabella/881952283_2\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8040/api/falabella/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8040",
+					"path": [
+						"api",
+						"falabella",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"sku\": \"FAL-88195228\",\r\n        \"name\": \"Bicicleta Baltoro Aro 29\",\r\n        \"brand\": \"JEEP\",\r\n        \"size\": \"ST\",\r\n        \"price\": 399999.0,\r\n        \"principalImageUrl\": \"https://falabella.scene7.com/is/image/Falabella/881952283_7\",\r\n        \"otherImagesUrl\": [\r\n            \"https://falabella.scene7.com/is/image/Falabella/881952283_8\",\r\n            \"https://falabella.scene7.com/is/image/Falabella/881952283_9\",\r\n            \"https://falabella.scene7.com/is/image/Falabella/881952283_7\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8040/api/falabella/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8040",
+					"path": [
+						"api",
+						"falabella",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete (Sku)",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8040/api/falabella/products/FAL-88195228",
+					"host": [
+						"localhost"
+					],
+					"port": "8040",
+					"path": [
+						"api",
+						"falabella",
+						"products",
+						"FAL-88195228"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get (Sku)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8040/api/falabella/products/FAL-88195228",
+					"host": [
+						"localhost"
+					],
+					"port": "8040",
+					"path": [
+						"api",
+						"falabella",
+						"products",
+						"FAL-88195228"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8040/api/falabella/products/",
+					"host": [
+						"localhost"
+					],
+					"port": "8040",
+					"path": [
+						"api",
+						"falabella",
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
